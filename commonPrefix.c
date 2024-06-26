@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 char* longestCommonPrefix(char** strs, int strsSize);
 char* longestCommonPrefix1(char** strs, int strsSize);
 int main(void) {
-    char* stringsy[] = {""};
+    char* stringsy[] = {"hi","hello", "howareu"};
 
     int size = sizeof(stringsy) / sizeof(stringsy[0]);
     char* result = longestCommonPrefix1(stringsy, size);
-    puts(result);
+    printf("%c", result[0]);
     free(result);
 }
 
